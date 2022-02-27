@@ -1,0 +1,184 @@
+﻿Guvi Geeks Network Pvt Ltd.
+1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+JSON Data:
+var obj=[
+    {person:"Sanket",age:"23",company:"Guvi"},
+    {person:"Harshal",age:"33",company:"Guvi Geek"},
+    {person:"Balaji",age:"34",company:"Guvi Geek Network"}
+    ]
+Code:
+  //  Normal for loop
+for ( var i = 0; i<obj.length;i++)
+{
+    user = obj[i];
+    console.log(
+        `
+        Name : ${user.person}
+        Age  : ${user.age}
+        Company : ${user.company}
+        `
+    )
+}
+output:
+
+index.js:665 
+        Name : Sanket
+        Age  : 23
+        Company : Guvi
+        
+index.js:665 
+        Name : Harshal
+        Age  : 33
+        Company : Guvi Geek
+        
+index.js:665 
+        Name : Balaji
+        Age  : 34
+        Company : Guvi Geek Network
+
+// forEach loop
+obj.forEach((user)=>{
+    console.log(
+        `
+        Name : ${user.name}
+        Age  : ${user.age}
+        Salary: ${user.salary}
+        City : ${user.city}
+        `
+    )
+
+})
+
+output:
+
+index.js:665 
+        Name : Sanket
+        Age  : 23
+        Company : Guvi
+        
+index.js:665 
+        Name : Harshal
+        Age  : 33
+        Company : Guvi Geek
+        
+index.js:665 
+        Name : Balaji
+        Age  : 34
+        Company : Guvi Geek Network
+
+
+// for in loop
+for (var index in obj)
+{
+    user= obj[index];
+    console.log(
+        `
+        Name : ${user.name}
+        Age  : ${user.age}
+        Salary: ${user.salary}
+        City : ${user.city}
+        `
+    )
+ }
+        
+output:
+
+index.js:665 
+        Name : Sanket
+        Age  : 23
+        Company : Guvi
+        
+index.js:665 
+        Name : Harshal
+        Age  : 33
+        Company : Guvi Geek
+        
+index.js:665 
+        Name : Balaji
+        Age  : 34
+        Company : Guvi Geek Network
+
+
+// for of loop
+for ( var key of obj)
+{
+
+    console.log(
+                `
+                Name : ${key.name}
+                Age  : ${key.age}
+                Salary: ${key.salary}
+                City : ${key.city}
+                `
+            )
+}
+ 
+        
+output:
+
+index.js:665 
+        Name : Sanket
+        Age  : 23
+        Company : Guvi
+        
+index.js:665 
+        Name : Harshal
+        Age  : 33
+        Company : Guvi Geek
+        
+index.js:665 
+        Name : Balaji
+        Age  : 34
+        Company : Guvi Geek Network
+
+
+2. Create your own resume data in JSON format
+
+Ans :
+
+var resume =
+{
+  "basics": [{
+    "name": "Sanket Apotikar",
+    "email": "sanketapotikar1@gmail.com",
+    "phone": "+91 9011437740",
+    "degree": "Computer Science",
+    "location":
+     {
+      "city": "Pune",
+      "country": "India",
+    },
+} 
+],
+
+  "skills": [
+    {
+      "name": "Programming Languages)",
+      "level": "3",
+      "keywords": [
+       'Java', 'C++','javascript,.net'
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": ["English","Marthi","Hindi"]
+   
+    }
+  ],
+ 
+};
+
+
+
+3. Read about the difference between window, screen and document in javascript
+
+->Window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model.
+
+->window.screen or just screen is a small information object about physical screen dimensions.
+
+->window.document or just document is the main object of the potentially visible document object model/DOM.
+
+
+4. Codekata practice
+- Problem solved in codekata
