@@ -156,7 +156,7 @@ var resume =
       "name": "Programming Languages)",
       "level": "3",
       "keywords": [
-       'Java', 'C++','javascript,.net'
+       'Java', 'C++','javascript','.Net'
       ]
     }
   ],
